@@ -1,5 +1,4 @@
-import { HomePage, FilmsPage } from "./pages";
-import { useEffect, useState } from "react";
+import { HomePage, FilmsPage, SingleFilmPage } from "./pages";
 import "./App.css";
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 
@@ -15,6 +14,7 @@ function App() {
   <Routes>
     <Route path="/" element={<HomePage />} />
     <Route path="/films" element={<FilmsPage />} />
+    <Route path="/films/film/:id" element={<SingleFilmPage />} />
   </Routes>
 </BrowserRouter>
 );
